@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2d4dff</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="MainPageBackground">@drawable/gradient1</color>
+    <color name="AddUpdateProduct">@drawable/gradient1</color>
+    <color name="UpdateProduct">@drawable/gradient1</color>
+    <color name="AddProduct">#ffeb89</color>
+</resources>
