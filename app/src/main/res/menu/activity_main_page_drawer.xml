@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/add_product_nav"
+            android:icon="@drawable/add_product_icon"
+            android:title="Add Product" />
+        <item
+            android:id="@+id/update_product_nav"
+            android:icon="@drawable/update_product_icon"
+            android:title="Update Product" />
+        <item
+            android:id="@+id/add_company_nav"
+            android:icon="@drawable/add_company_icon"
+            android:title="Add Company" />
+
+    </group>
+
+    <item android:title="Stock Details">
+        <menu>
+            <item
+                android:id="@+id/company_stock_nav"
+                android:icon="@drawable/company_wise_logo"
+                android:title="By Company" />
+            <item
+                android:id="@+id/product_stock_nav"
+                android:icon="@drawable/product_wise_logo"
+                android:title="By Product" />
+        </menu>
+    </item>
+
+</menu>

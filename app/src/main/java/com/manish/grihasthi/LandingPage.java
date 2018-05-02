@@ -24,7 +24,7 @@ public class LandingPage extends AppCompatActivity {
         Animation anim= (Animation) AnimationUtils.loadAnimation(this,R.anim.landing_page_animation);
         tv.startAnimation(anim);
         iv.startAnimation(anim);
-        final Intent i=new Intent(this,MainLoginPage.class);
+        final Intent i=new Intent(this,MainPage.class);
         Thread timer =new Thread(){
 
              public void run() {

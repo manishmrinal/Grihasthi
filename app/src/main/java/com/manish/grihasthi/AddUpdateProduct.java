@@ -9,13 +9,13 @@ import android.widget.Button;
 public class AddUpdateProduct extends AppCompatActivity {
 
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_update_product);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        Button AddProduct=(Button)findViewById(R.id.AddProduct);
+       /* Button AddProduct=(Button)findViewById(R.id.AddProduct);
         AddProduct.setOnClickListener(
                 new Button.OnClickListener(){
                     @Override
@@ -49,6 +49,7 @@ public class AddUpdateProduct extends AppCompatActivity {
 
         Intent updateProductActivityIntent=new Intent(this,UpdateProduct.class);
         startActivity(updateProductActivityIntent);
-    }
+    }*/
 
+    }
 }
