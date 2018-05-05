@@ -1,9 +1,130 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AddProduct">
+    tools:context=".UpdateProduct"
+    android:background="@drawable/gradient_add_form"
+    >
 
-</android.support.constraint.ConstraintLayout>
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20px"
+            android:layout_marginLeft="20px">
+
+            <EditText
+                android:id="@+id/a_name_form"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
+                android:hint="Agency Name"
+                android:inputType="textPersonName" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20px"
+            android:layout_marginLeft="20px">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/c_name_form"
+                android:hint="Company Name"
+                android:inputType=""
+                android:layout_marginBottom="10dp"/>
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20px"
+            android:layout_marginLeft="20px">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/p_name_form"
+                android:hint="Product Name"
+                android:inputType="textPersonName"
+                android:layout_marginBottom="20dp"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal"
+            android:weightSum="1" >
+            <EditText
+                android:id="@+id/p_quant_form"
+                android:layout_width="400px"
+
+                android:layout_height="50dp"
+                android:layout_marginBottom="20dp"
+                android:layout_weight="0.25"
+                android:gravity="center"
+                android:hint="Quantity"
+                android:layout_marginLeft="20px"
+                android:layout_marginRight="40px"/>
+            <EditText
+                android:id="@+id/p_quant_unit"
+                android:layout_width="100px"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.75"
+                android:gravity="center"
+                android:hint="UNIT"
+                android:layout_marginRight="20px"
+                android:layout_marginLeft="40px"/>
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal"
+            android:weightSum="1" >
+            <EditText
+                android:id="@+id/p_cp_form"
+                android:layout_width="400px"
+
+                android:layout_weight="0.25"
+                android:gravity="center"
+                android:layout_height="50dp"
+                android:layout_marginBottom="20dp"
+                android:hint="Cost Price"
+                android:layout_marginLeft="20px"
+                android:layout_marginRight="40px"/>
+
+            <TextView
+
+                android:layout_width="100px"
+                android:layout_height="50dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="40px"
+                android:layout_marginRight="20px"
+                android:layout_weight="0.75"
+                android:gravity="center"
+                android:hint="Rs"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <Button
+        android:id="@+id/p_form_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="100dp"
+        android:text="ADD PRODUCT" />
+
+</RelativeLayout>

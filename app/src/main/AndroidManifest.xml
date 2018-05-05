@@ -9,10 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_grihasthi"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainLoginPage" />
-        <activity android:name=".AddUpdateProduct"  android:parentActivityName=".MainPage" android:label="ADD PRODUCT" />
-        <activity android:name=".UpdateProduct" />
-        <activity android:name=".AddProduct" />
+        <activity android:name=".UpdateProduct" android:parentActivityName=".MainPage" android:label="UPDATE PRODUCT"/>
+        <activity android:name=".AddProduct" android:parentActivityName=".MainPage" android:label="ADD PRODUCT" />
         <activity android:name=".LandingPage">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

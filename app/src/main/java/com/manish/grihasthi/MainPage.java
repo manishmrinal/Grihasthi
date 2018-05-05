@@ -71,7 +71,7 @@ public class MainPage extends AppCompatActivity
             @Override
             public void onClick(View v1) {
 
-                Intent addupdateActivityIntent=new Intent(getApplicationContext(),AddUpdateProduct.class);
+                Intent addupdateActivityIntent=new Intent(getApplicationContext(),AddProduct.class);
                 startActivity(addupdateActivityIntent);
             }
         });
@@ -79,7 +79,7 @@ public class MainPage extends AppCompatActivity
             @Override
             public void onClick(View v2) {
 
-                Intent addupdateActivityIntent=new Intent(getApplicationContext(),AddUpdateProduct.class);
+                Intent addupdateActivityIntent=new Intent(getApplicationContext(),AddProduct.class);
                 startActivity(addupdateActivityIntent);
             }
         });
@@ -136,11 +136,12 @@ public class MainPage extends AppCompatActivity
 
         if (id == R.id.add_product_nav) {
 
-            Intent addupdateActivityIntent=new Intent(getApplicationContext(),AddUpdateProduct.class);
-            startActivity(addupdateActivityIntent);
+            Intent addActivityIntent=new Intent(getApplicationContext(),AddProduct.class);
+            startActivity(addActivityIntent);
 
         } else if (id == R.id.update_product_nav) {
-
+            Intent updateActivityIntent=new Intent(getApplicationContext(),UpdateProduct.class);
+            startActivity(updateActivityIntent);
         } else if (id == R.id.add_company_nav) {
 
         } else if (id == R.id.company_stock_nav) {
