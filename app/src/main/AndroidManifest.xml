@@ -9,8 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_grihasthi"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".UpdateProduct" android:parentActivityName=".MainPage" android:label="UPDATE PRODUCT"/>
-        <activity android:name=".AddProduct" android:parentActivityName=".MainPage" android:label="ADD PRODUCT" />
+        <activity
+            android:name=".UpdateProduct"
+            android:label="UPDATE PRODUCT"
+            android:parentActivityName=".MainPage" />
+        <activity
+            android:name=".AddProduct"
+            android:label="ADD PRODUCT"
+            android:parentActivityName=".MainPage" />
         <activity android:name=".LandingPage">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -26,6 +32,17 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.manish.grihasthi.LandingPage" />
+        </activity>
+        <activity android:name=".SearchActivity"
+            android:label="SEARCH PRODUCT"
+            android:parentActivityName=".MainPage" >
+
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+            <meta-data android:name="android.app.searchable"
+                android:resource="@xml/searchable"/>
+
         </activity>
     </application>
 

@@ -145,9 +145,11 @@ public class MainPage extends AppCompatActivity
         } else if (id == R.id.add_company_nav) {
 
         } else if (id == R.id.company_stock_nav) {
-
+            Intent searchActivityIntent=new Intent(getApplicationContext(),SearchActivity.class);
+            startActivity(searchActivityIntent);
         } else if (id == R.id.product_stock_nav) {
-
+            Intent searchActivityIntent=new Intent(getApplicationContext(),SearchActivity.class);
+            startActivity(searchActivityIntent);
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
