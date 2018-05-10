@@ -2,9 +2,11 @@
 <resources>
     <color name="colorPrimary">#2d4dff</color>
     <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorAccent">#00084b</color>
     <color name="MainPageBackground">@drawable/gradient1</color>
     <color name="AddUpdateProduct">@drawable/gradient1</color>
     <color name="UpdateProduct">@drawable/gradient1</color>
     <color name="AddProduct">#ffeb89</color>
+    <color name="fab1">#c4223d</color>
+    <color name="fab2">#016c67</color>
 </resources>

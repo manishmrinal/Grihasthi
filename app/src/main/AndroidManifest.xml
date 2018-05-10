@@ -4,21 +4,28 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/ic_launcher_grihasthi"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/ic_launcher_grihasthi"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainLoginPage"/>
-        <activity android:name=".AddUpdateProduct" />
-        <activity android:name=".UpdateProduct" />
-        <activity android:name=".AddProduct" />
+        <activity android:name=".UpdateProduct" android:parentActivityName=".MainPage" android:label="UPDATE PRODUCT"/>
+        <activity android:name=".AddProduct" android:parentActivityName=".MainPage" android:label="ADD PRODUCT" />
         <activity android:name=".LandingPage">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainPage"
+            android:label="@string/title_activity_main_page"
+            android:parentActivityName=".LandingPage"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.manish.grihasthi.LandingPage" />
         </activity>
     </application>
 
