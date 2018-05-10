@@ -4,11 +4,12 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher_grihasthi"
+        android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_grihasthi"
+        android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+<<<<<<< HEAD
         <activity
             android:name=".UpdateProduct"
             android:label="UPDATE PRODUCT"
@@ -17,6 +18,12 @@
             android:name=".AddProduct"
             android:label="ADD PRODUCT"
             android:parentActivityName=".MainPage" />
+=======
+        <activity android:name=".MainLoginPage"/>
+        <activity android:name=".AddUpdateProduct" />
+        <activity android:name=".UpdateProduct" />
+        <activity android:name=".AddProduct" />
+>>>>>>> parent of abbbdf1... Merge pull request #1 from manishmrinal/Adding-Widgets
         <activity android:name=".LandingPage">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,6 +31,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+<<<<<<< HEAD
         <activity
             android:name=".MainPage"
             android:label="@string/title_activity_main_page"
@@ -44,6 +52,8 @@
                 android:resource="@xml/searchable"/>
 
         </activity>
+=======
+>>>>>>> parent of abbbdf1... Merge pull request #1 from manishmrinal/Adding-Widgets
     </application>
 
 </manifest>
